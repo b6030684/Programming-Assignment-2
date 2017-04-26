@@ -64,7 +64,7 @@
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(55, 39);
             this.button16.TabIndex = 17;
-            this.button16.Text = "button1";
+            this.button16.Text = "     #       0 00";
             this.button16.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -73,7 +73,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(55, 39);
             this.button8.TabIndex = 16;
-            this.button8.Text = "button1";
+            this.button8.Text = "   000     [ _ ]";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -82,7 +82,7 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(55, 39);
             this.button10.TabIndex = 15;
-            this.button10.Text = "button1";
+            this.button10.Text = "* - _";
             this.button10.UseVisualStyleBackColor = true;
             // 
             // button33
@@ -100,7 +100,7 @@
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(55, 39);
             this.button15.TabIndex = 13;
-            this.button15.Text = "button1";
+            this.button15.Text = "    6      MNO";
             this.button15.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -109,7 +109,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(55, 39);
             this.button6.TabIndex = 12;
-            this.button6.Text = "button1";
+            this.button6.Text = "   5      JKL";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -118,7 +118,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(55, 39);
             this.button4.TabIndex = 11;
-            this.button4.Text = "button1";
+            this.button4.Text = "     4       GHI";
             this.button4.UseVisualStyleBackColor = true;
             // 
             // button5
@@ -136,7 +136,7 @@
             this.button_2.Name = "button_2";
             this.button_2.Size = new System.Drawing.Size(55, 39);
             this.button_2.TabIndex = 10;
-            this.button_2.Text = "2  TUV";
+            this.button_2.Text = "   2     TUV";
             this.button_2.UseVisualStyleBackColor = true;
             // 
             // button_1
@@ -145,7 +145,7 @@
             this.button_1.Name = "button_1";
             this.button_1.Size = new System.Drawing.Size(55, 39);
             this.button_1.TabIndex = 8;
-            this.button_1.Text = "1 PQRS";
+            this.button_1.Text = "   1    PQRS";
             this.button_1.UseVisualStyleBackColor = true;
             // 
             // button18
@@ -181,7 +181,7 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(55, 39);
             this.button9.TabIndex = 4;
-            this.button9.Text = "button1";
+            this.button9.Text = "   9      DEF";
             this.button9.UseVisualStyleBackColor = true;
             // 
             // button3
@@ -199,7 +199,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(55, 39);
             this.button2.TabIndex = 2;
-            this.button2.Text = "button1";
+            this.button2.Text = "   8      ABC";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button13
@@ -217,14 +217,14 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(55, 39);
             this.button1.TabIndex = 19;
-            this.button1.Text = "button1";
+            this.button1.Text = "    7        .,\"";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 422);
+            this.ClientSize = new System.Drawing.Size(546, 503);
             this.Controls.Add(this.Enter_key);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.button8);
