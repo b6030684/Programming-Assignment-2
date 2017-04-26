@@ -33,5 +33,20 @@ namespace Mini_Keyboard
                 button_status.Text = "Multi-press";
             }
         }
+
+        private void button_1_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void button_2_Click(object sender, EventArgs e)
+        {
+            if(button_2
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
