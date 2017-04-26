@@ -16,5 +16,10 @@ namespace Mini_Keyboard
         {
             InitializeComponent();
         }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
