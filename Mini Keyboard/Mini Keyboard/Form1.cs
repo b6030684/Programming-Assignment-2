@@ -21,5 +21,17 @@ namespace Mini_Keyboard
         {
 
         }
+
+        private void Mode_button_Click(object sender, EventArgs e)
+        {
+            if (button_status.Text == "Multi-press")
+            {
+                button_status.Text = "Predictive";
+            }
+            else
+            {
+                button_status.Text = "Multi-press";
+            }
+        }
     }
 }

@@ -240,6 +240,7 @@
             this.Mode_button.TabIndex = 9;
             this.Mode_button.Text = "Mode";
             this.Mode_button.UseVisualStyleBackColor = false;
+            this.Mode_button.Click += new System.EventHandler(this.Mode_button_Click);
             // 
             // button_7
             // 
