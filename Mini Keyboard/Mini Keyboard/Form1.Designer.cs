@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Enter_key = new System.Windows.Forms.Button();
             this.button_hashtag = new System.Windows.Forms.Button();
             this.button_0 = new System.Windows.Forms.Button();
@@ -48,9 +49,9 @@
             this.Mode_button = new System.Windows.Forms.Button();
             this.button_7 = new System.Windows.Forms.Button();
             this.button_status = new System.Windows.Forms.TextBox();
-            this.World_builder = new System.Windows.Forms.RichTextBox();
+            this.Letter_builder = new System.Windows.Forms.RichTextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBox_7 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
             this.listBox4 = new System.Windows.Forms.ListBox();
@@ -61,6 +62,8 @@
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.listBox10 = new System.Windows.Forms.ListBox();
             this.listBox12 = new System.Windows.Forms.ListBox();
+            this.listBox_global = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Enter_key
@@ -265,6 +268,7 @@
             this.button_7.TabIndex = 19;
             this.button_7.Text = "    7        .,\"";
             this.button_7.UseVisualStyleBackColor = false;
+            this.button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // button_status
             // 
@@ -275,13 +279,13 @@
             this.button_status.TabIndex = 20;
             this.button_status.Text = "Multi-press";
             // 
-            // World_builder
+            // Letter_builder
             // 
-            this.World_builder.Location = new System.Drawing.Point(125, 140);
-            this.World_builder.Name = "World_builder";
-            this.World_builder.Size = new System.Drawing.Size(177, 17);
-            this.World_builder.TabIndex = 21;
-            this.World_builder.Text = "";
+            this.Letter_builder.Location = new System.Drawing.Point(125, 140);
+            this.Letter_builder.Name = "Letter_builder";
+            this.Letter_builder.Size = new System.Drawing.Size(177, 17);
+            this.Letter_builder.TabIndex = 21;
+            this.Letter_builder.Text = "";
             // 
             // textBox2
             // 
@@ -291,16 +295,16 @@
             this.textBox2.Size = new System.Drawing.Size(461, 118);
             this.textBox2.TabIndex = 22;
             // 
-            // listBox1
+            // listBox_7
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.listBox_7.FormattingEnabled = true;
+            this.listBox_7.Items.AddRange(new object[] {
             ". ~ \" 7 \' : ;"});
-            this.listBox1.Location = new System.Drawing.Point(372, 170);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(58, 17);
-            this.listBox1.TabIndex = 23;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_7.Location = new System.Drawing.Point(372, 170);
+            this.listBox_7.Name = "listBox_7";
+            this.listBox_7.Size = new System.Drawing.Size(58, 17);
+            this.listBox_7.TabIndex = 23;
+            this.listBox_7.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
@@ -412,11 +416,26 @@
             this.listBox12.TabIndex = 23;
             this.listBox12.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // listBox_global
+            // 
+            this.listBox_global.FormattingEnabled = true;
+            this.listBox_global.Items.AddRange(new object[] {
+            "lb_global"});
+            this.listBox_global.Location = new System.Drawing.Point(453, 292);
+            this.listBox_global.Name = "listBox_global";
+            this.listBox_global.Size = new System.Drawing.Size(76, 17);
+            this.listBox_global.TabIndex = 24;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 503);
+            this.Controls.Add(this.listBox_global);
             this.Controls.Add(this.listBox12);
             this.Controls.Add(this.listBox9);
             this.Controls.Add(this.listBox6);
@@ -427,9 +446,9 @@
             this.Controls.Add(this.listBox5);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBox_7);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.World_builder);
+            this.Controls.Add(this.Letter_builder);
             this.Controls.Add(this.button_status);
             this.Controls.Add(this.Enter_key);
             this.Controls.Add(this.button_hashtag);
@@ -479,9 +498,9 @@
         private System.Windows.Forms.Button Mode_button;
         private System.Windows.Forms.Button button_7;
         private System.Windows.Forms.TextBox button_status;
-        private System.Windows.Forms.RichTextBox World_builder;
+        private System.Windows.Forms.RichTextBox Letter_builder;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBox_7;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
         private System.Windows.Forms.ListBox listBox4;
@@ -492,6 +511,8 @@
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.ListBox listBox10;
         private System.Windows.Forms.ListBox listBox12;
+        private System.Windows.Forms.ListBox listBox_global;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
