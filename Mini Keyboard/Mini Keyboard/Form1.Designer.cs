@@ -57,13 +57,13 @@
             this.listBox4 = new System.Windows.Forms.ListBox();
             this.listBox5 = new System.Windows.Forms.ListBox();
             this.listBox6 = new System.Windows.Forms.ListBox();
-            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.listBox_1 = new System.Windows.Forms.ListBox();
             this.listBox8 = new System.Windows.Forms.ListBox();
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.listBox10 = new System.Windows.Forms.ListBox();
             this.listBox12 = new System.Windows.Forms.ListBox();
             this.listBox_global = new System.Windows.Forms.ListBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Enter_key
@@ -304,6 +304,7 @@
             this.listBox_7.Name = "listBox_7";
             this.listBox_7.Size = new System.Drawing.Size(58, 17);
             this.listBox_7.TabIndex = 23;
+            this.listBox_7.Visible = false;
             this.listBox_7.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
@@ -315,6 +316,7 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(58, 17);
             this.listBox2.TabIndex = 23;
+            this.listBox2.Visible = false;
             this.listBox2.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox3
@@ -326,6 +328,7 @@
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(58, 17);
             this.listBox3.TabIndex = 23;
+            this.listBox3.Visible = false;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox4
@@ -337,6 +340,7 @@
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(58, 17);
             this.listBox4.TabIndex = 23;
+            this.listBox4.Visible = false;
             this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox5
@@ -348,6 +352,7 @@
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(58, 17);
             this.listBox5.TabIndex = 23;
+            this.listBox5.Visible = false;
             this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox6
@@ -359,18 +364,20 @@
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(58, 17);
             this.listBox6.TabIndex = 23;
+            this.listBox6.Visible = false;
             this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox7
+            // listBox_1
             // 
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.Items.AddRange(new object[] {
+            this.listBox_1.FormattingEnabled = true;
+            this.listBox_1.Items.AddRange(new object[] {
             "p q r s 1 P Q R S"});
-            this.listBox7.Location = new System.Drawing.Point(372, 216);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(58, 17);
-            this.listBox7.TabIndex = 23;
-            this.listBox7.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_1.Location = new System.Drawing.Point(372, 216);
+            this.listBox_1.Name = "listBox_1";
+            this.listBox_1.Size = new System.Drawing.Size(58, 17);
+            this.listBox_1.TabIndex = 23;
+            this.listBox_1.Visible = false;
+            this.listBox_1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox8
             // 
@@ -381,6 +388,7 @@
             this.listBox8.Name = "listBox8";
             this.listBox8.Size = new System.Drawing.Size(58, 17);
             this.listBox8.TabIndex = 23;
+            this.listBox8.Visible = false;
             this.listBox8.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox9
@@ -392,6 +400,7 @@
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(58, 17);
             this.listBox9.TabIndex = 23;
+            this.listBox9.Visible = false;
             this.listBox9.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox10
@@ -403,6 +412,7 @@
             this.listBox10.Name = "listBox10";
             this.listBox10.Size = new System.Drawing.Size(58, 17);
             this.listBox10.TabIndex = 23;
+            this.listBox10.Visible = false;
             this.listBox10.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox12
@@ -414,6 +424,7 @@
             this.listBox12.Name = "listBox12";
             this.listBox12.Size = new System.Drawing.Size(58, 17);
             this.listBox12.TabIndex = 23;
+            this.listBox12.Visible = false;
             this.listBox12.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox_global
@@ -426,9 +437,10 @@
             this.listBox_global.Size = new System.Drawing.Size(76, 17);
             this.listBox_global.TabIndex = 24;
             // 
-            // timer1
+            // timer
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer.Interval = 500;
+            this.timer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -442,7 +454,7 @@
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox10);
             this.Controls.Add(this.listBox8);
-            this.Controls.Add(this.listBox7);
+            this.Controls.Add(this.listBox_1);
             this.Controls.Add(this.listBox5);
             this.Controls.Add(this.listBox4);
             this.Controls.Add(this.listBox2);
@@ -471,6 +483,7 @@
             this.Controls.Add(this.button_7);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -506,13 +519,13 @@
         private System.Windows.Forms.ListBox listBox4;
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.ListBox listBox6;
-        private System.Windows.Forms.ListBox listBox7;
+        private System.Windows.Forms.ListBox listBox_1;
         private System.Windows.Forms.ListBox listBox8;
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.ListBox listBox10;
         private System.Windows.Forms.ListBox listBox12;
         private System.Windows.Forms.ListBox listBox_global;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer;
     }
 }
 

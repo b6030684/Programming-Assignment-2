@@ -48,12 +48,16 @@ namespace Mini_Keyboard
          if (firstclick == true)
          {
              listBox_global.Items.Clear();
-
-             listBox_global.Items.AddRange(listBox_7.Items);
+             for (int i = 0; i < listBox_1.Items.Count; i++ )
+             {
+                  listBox_global.Items.Add (listBox_1.Items [i].ToString());
+             }
+             firstclick = false;
+                 
          }
          Letter_builder.Enabled = false;
          Numberofclicks++;
-
+            
          Letter_builder.Enabled = true;
            
         }
@@ -75,6 +79,15 @@ namespace Mini_Keyboard
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+            Letter_builder.AppendText(listBox_global.Items[Numberofclicks].ToString());
+            timer.Enabled = false;
+            firstclick = true;
+            Numberofclicks = -1; 
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
