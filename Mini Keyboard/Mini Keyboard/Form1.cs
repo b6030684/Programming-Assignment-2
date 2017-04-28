@@ -353,6 +353,7 @@ namespace Mini_Keyboard
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Notepad.Text = string.Empty;
 
         }
     }
