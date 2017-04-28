@@ -133,7 +133,7 @@ namespace Mini_Keyboard
 
         private void Enter_key_Click(object sender, EventArgs e)
         {
-
+            Notepad.AppendText(Environment.NewLine);
         }
 
         private void button_3_Click(object sender, EventArgs e)
