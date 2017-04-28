@@ -75,6 +75,7 @@
             this.Enter_key.TabIndex = 1;
             this.Enter_key.Text = "Enter";
             this.Enter_key.UseVisualStyleBackColor = false;
+            this.Enter_key.Click += new System.EventHandler(this.Enter_key_Click);
             // 
             // button_hashtag
             // 
@@ -371,7 +372,15 @@
             // 
             this.listBox_1.FormattingEnabled = true;
             this.listBox_1.Items.AddRange(new object[] {
-            "p q r s 1 P Q R S"});
+            "p ",
+            "q",
+            "r",
+            "s",
+            "1",
+            "P",
+            "Q",
+            "R",
+            "S"});
             this.listBox_1.Location = new System.Drawing.Point(372, 216);
             this.listBox_1.Name = "listBox_1";
             this.listBox_1.Size = new System.Drawing.Size(58, 17);
