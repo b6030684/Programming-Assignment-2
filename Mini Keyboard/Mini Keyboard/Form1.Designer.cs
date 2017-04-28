@@ -58,7 +58,7 @@
             this.listBox5 = new System.Windows.Forms.ListBox();
             this.listBox6 = new System.Windows.Forms.ListBox();
             this.listBox_1 = new System.Windows.Forms.ListBox();
-            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.listBox_2 = new System.Windows.Forms.ListBox();
             this.listBox9 = new System.Windows.Forms.ListBox();
             this.listBox10 = new System.Windows.Forms.ListBox();
             this.listBox12 = new System.Windows.Forms.ListBox();
@@ -418,10 +418,10 @@
             this.listBox_1.Visible = false;
             this.listBox_1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox8
+            // listBox_2
             // 
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.Items.AddRange(new object[] {
+            this.listBox_2.FormattingEnabled = true;
+            this.listBox_2.Items.AddRange(new object[] {
             "t",
             "u",
             "v",
@@ -429,12 +429,12 @@
             "T",
             "U",
             "V"});
-            this.listBox8.Location = new System.Drawing.Point(436, 216);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(58, 17);
-            this.listBox8.TabIndex = 23;
-            this.listBox8.Visible = false;
-            this.listBox8.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_2.Location = new System.Drawing.Point(436, 216);
+            this.listBox_2.Name = "listBox_2";
+            this.listBox_2.Size = new System.Drawing.Size(58, 17);
+            this.listBox_2.TabIndex = 23;
+            this.listBox_2.Visible = false;
+            this.listBox_2.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox9
             // 
@@ -505,7 +505,7 @@
             this.Controls.Add(this.listBox6);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox10);
-            this.Controls.Add(this.listBox8);
+            this.Controls.Add(this.listBox_2);
             this.Controls.Add(this.listBox_1);
             this.Controls.Add(this.listBox5);
             this.Controls.Add(this.listBox4);
@@ -572,7 +572,7 @@
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.ListBox listBox6;
         private System.Windows.Forms.ListBox listBox_1;
-        private System.Windows.Forms.ListBox listBox8;
+        private System.Windows.Forms.ListBox listBox_2;
         private System.Windows.Forms.ListBox listBox9;
         private System.Windows.Forms.ListBox listBox10;
         private System.Windows.Forms.ListBox listBox12;

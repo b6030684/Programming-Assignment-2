@@ -69,9 +69,25 @@ namespace Mini_Keyboard
 
         private void button_2_Click(object sender, EventArgs e)
         {
-           
-        }
+            timer.Stop();
+            if (firstclick == true)
+            {
+                listBox_global.Items.Clear();
+                for (int i = 0; i < listBox_2.Items.Count; i++)
+                {
+                    listBox_global.Items.Add(listBox_2.Items[i].ToString());
 
+                }
+                firstclick = false;
+
+            }
+
+            Numberofclicks++;
+
+            timer.Enabled = true;
+
+        }
+            
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
