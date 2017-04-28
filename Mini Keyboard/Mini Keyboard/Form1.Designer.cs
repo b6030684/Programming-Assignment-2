@@ -286,7 +286,7 @@
             // 
             this.Letter_builder.Location = new System.Drawing.Point(125, 140);
             this.Letter_builder.Name = "Letter_builder";
-            this.Letter_builder.Size = new System.Drawing.Size(177, 17);
+            this.Letter_builder.Size = new System.Drawing.Size(177, 20);
             this.Letter_builder.TabIndex = 21;
             this.Letter_builder.Text = "";
             // 
