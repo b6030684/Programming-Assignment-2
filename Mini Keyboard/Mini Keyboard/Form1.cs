@@ -347,7 +347,11 @@ namespace Mini_Keyboard
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-          
+            openFileDialog1.InitialDirectory = "C\\:";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                MessageBox.Show("You opened this file : " + openFileDialog1.FileName);
+            }
 
         }
 
