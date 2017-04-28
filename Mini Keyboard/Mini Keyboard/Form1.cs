@@ -12,7 +12,7 @@ using MyDialogs;
 
 namespace Mini_Keyboard
 {
-    public partial class Form1 : Form
+    public partial class Mini_Keyboard : Form
     {
 
         bool firstclick = true;
@@ -21,7 +21,7 @@ namespace Mini_Keyboard
 
 
 
-        public Form1()
+        public Mini_Keyboard()
         {
             InitializeComponent();
             timer.Stop();
@@ -333,6 +333,16 @@ namespace Mini_Keyboard
         {
             Notepad.AppendText( Letter_builder.Text + " ");
             Letter_builder.Text = "";
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

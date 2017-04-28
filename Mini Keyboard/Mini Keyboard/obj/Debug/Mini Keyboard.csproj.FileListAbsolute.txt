@@ -2,8 +2,8 @@ c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\bin\Debug\Mini Keyboard.exe
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\bin\Debug\Mini Keyboard.pdb
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini Keyboard.csprojResolveAssemblyReference.cache
-c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini_Keyboard.Form1.resources
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini_Keyboard.Properties.Resources.resources
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini Keyboard.csproj.GenerateResource.Cache
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini Keyboard.exe
 c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini Keyboard.pdb
+c:\users\arran\documents\visual studio 2013\Projects\Mini Keyboard\Mini Keyboard\obj\Debug\Mini_Keyboard.Mini_Keyboard.resources
