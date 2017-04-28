@@ -344,5 +344,16 @@ namespace Mini_Keyboard
         {
 
         }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
