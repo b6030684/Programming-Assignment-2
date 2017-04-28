@@ -60,8 +60,8 @@
             this.listBox_1 = new System.Windows.Forms.ListBox();
             this.listBox_2 = new System.Windows.Forms.ListBox();
             this.listBox_3 = new System.Windows.Forms.ListBox();
-            this.listBox10 = new System.Windows.Forms.ListBox();
-            this.listBox12 = new System.Windows.Forms.ListBox();
+            this.listBox_11 = new System.Windows.Forms.ListBox();
+            this.listBox_10 = new System.Windows.Forms.ListBox();
             this.listBox_global = new System.Windows.Forms.ListBox();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
@@ -108,6 +108,7 @@
             this.button_star.TabIndex = 15;
             this.button_star.Text = "* - _";
             this.button_star.UseVisualStyleBackColor = false;
+            this.button_star.Click += new System.EventHandler(this.button_star_Click);
             // 
             // button33
             // 
@@ -468,35 +469,39 @@
             this.listBox_3.Visible = false;
             this.listBox_3.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox10
+            // listBox_11
             // 
-            this.listBox10.FormattingEnabled = true;
-            this.listBox10.Items.AddRange(new object[] {
-            "* - _"});
-            this.listBox10.Location = new System.Drawing.Point(372, 239);
-            this.listBox10.Name = "listBox10";
-            this.listBox10.Size = new System.Drawing.Size(58, 17);
-            this.listBox10.TabIndex = 23;
-            this.listBox10.Visible = false;
-            this.listBox10.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_11.FormattingEnabled = true;
+            this.listBox_11.Items.AddRange(new object[] {
+            "*",
+            "-",
+            "_"});
+            this.listBox_11.Location = new System.Drawing.Point(372, 239);
+            this.listBox_11.Name = "listBox_11";
+            this.listBox_11.Size = new System.Drawing.Size(58, 17);
+            this.listBox_11.TabIndex = 23;
+            this.listBox_11.Visible = false;
+            this.listBox_11.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox12
+            // listBox_10
             // 
-            this.listBox12.FormattingEnabled = true;
-            this.listBox12.Items.AddRange(new object[] {
-            "# - _"});
-            this.listBox12.Location = new System.Drawing.Point(500, 239);
-            this.listBox12.Name = "listBox12";
-            this.listBox12.Size = new System.Drawing.Size(58, 17);
-            this.listBox12.TabIndex = 23;
-            this.listBox12.Visible = false;
-            this.listBox12.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_10.FormattingEnabled = true;
+            this.listBox_10.Items.AddRange(new object[] {
+            "#",
+            "-",
+            "_"});
+            this.listBox_10.Location = new System.Drawing.Point(500, 239);
+            this.listBox_10.Name = "listBox_10";
+            this.listBox_10.Size = new System.Drawing.Size(58, 17);
+            this.listBox_10.TabIndex = 23;
+            this.listBox_10.Visible = false;
+            this.listBox_10.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox_global
             // 
             this.listBox_global.FormattingEnabled = true;
             this.listBox_global.Items.AddRange(new object[] {
-            "lb_global"});
+            "  "});
             this.listBox_global.Location = new System.Drawing.Point(453, 292);
             this.listBox_global.Name = "listBox_global";
             this.listBox_global.Size = new System.Drawing.Size(76, 17);
@@ -513,11 +518,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(615, 503);
             this.Controls.Add(this.listBox_global);
-            this.Controls.Add(this.listBox12);
+            this.Controls.Add(this.listBox_10);
             this.Controls.Add(this.listBox_3);
             this.Controls.Add(this.listBox_6);
             this.Controls.Add(this.listBox_9);
-            this.Controls.Add(this.listBox10);
+            this.Controls.Add(this.listBox_11);
             this.Controls.Add(this.listBox_2);
             this.Controls.Add(this.listBox_1);
             this.Controls.Add(this.listBox_5);
@@ -587,8 +592,8 @@
         private System.Windows.Forms.ListBox listBox_1;
         private System.Windows.Forms.ListBox listBox_2;
         private System.Windows.Forms.ListBox listBox_3;
-        private System.Windows.Forms.ListBox listBox10;
-        private System.Windows.Forms.ListBox listBox12;
+        private System.Windows.Forms.ListBox listBox_11;
+        private System.Windows.Forms.ListBox listBox_10;
         private System.Windows.Forms.ListBox listBox_global;
         private System.Windows.Forms.Timer timer;
     }
