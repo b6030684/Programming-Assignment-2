@@ -54,12 +54,12 @@
             this.listBox_7 = new System.Windows.Forms.ListBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
-            this.listBox5 = new System.Windows.Forms.ListBox();
-            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.listBox_4 = new System.Windows.Forms.ListBox();
+            this.listBox_5 = new System.Windows.Forms.ListBox();
+            this.listBox_6 = new System.Windows.Forms.ListBox();
             this.listBox_1 = new System.Windows.Forms.ListBox();
             this.listBox_2 = new System.Windows.Forms.ListBox();
-            this.listBox9 = new System.Windows.Forms.ListBox();
+            this.listBox_3 = new System.Windows.Forms.ListBox();
             this.listBox10 = new System.Windows.Forms.ListBox();
             this.listBox12 = new System.Windows.Forms.ListBox();
             this.listBox_global = new System.Windows.Forms.ListBox();
@@ -150,6 +150,7 @@
             this.button_4.TabIndex = 11;
             this.button_4.Text = "     4       GHI";
             this.button_4.UseVisualStyleBackColor = false;
+            this.button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // button_3
             // 
@@ -161,6 +162,7 @@
             this.button_3.TabIndex = 18;
             this.button_3.Text = "3 WXYZ";
             this.button_3.UseVisualStyleBackColor = false;
+            this.button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // button_2
             // 
@@ -344,10 +346,10 @@
             this.listBox3.Visible = false;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox4
+            // listBox_4
             // 
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.Items.AddRange(new object[] {
+            this.listBox_4.FormattingEnabled = true;
+            this.listBox_4.Items.AddRange(new object[] {
             "g",
             "h",
             "i",
@@ -355,17 +357,17 @@
             "G",
             "H",
             "I"});
-            this.listBox4.Location = new System.Drawing.Point(372, 193);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(58, 17);
-            this.listBox4.TabIndex = 23;
-            this.listBox4.Visible = false;
-            this.listBox4.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_4.Location = new System.Drawing.Point(372, 193);
+            this.listBox_4.Name = "listBox_4";
+            this.listBox_4.Size = new System.Drawing.Size(58, 17);
+            this.listBox_4.TabIndex = 23;
+            this.listBox_4.Visible = false;
+            this.listBox_4.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox5
+            // listBox_5
             // 
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.Items.AddRange(new object[] {
+            this.listBox_5.FormattingEnabled = true;
+            this.listBox_5.Items.AddRange(new object[] {
             "j",
             "k",
             "l",
@@ -373,17 +375,17 @@
             "J",
             "K",
             "L"});
-            this.listBox5.Location = new System.Drawing.Point(436, 193);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(58, 17);
-            this.listBox5.TabIndex = 23;
-            this.listBox5.Visible = false;
-            this.listBox5.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_5.Location = new System.Drawing.Point(436, 193);
+            this.listBox_5.Name = "listBox_5";
+            this.listBox_5.Size = new System.Drawing.Size(58, 17);
+            this.listBox_5.TabIndex = 23;
+            this.listBox_5.Visible = false;
+            this.listBox_5.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox6
+            // listBox_6
             // 
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.Items.AddRange(new object[] {
+            this.listBox_6.FormattingEnabled = true;
+            this.listBox_6.Items.AddRange(new object[] {
             "m",
             "n",
             "o",
@@ -391,12 +393,12 @@
             "M",
             "N",
             "O"});
-            this.listBox6.Location = new System.Drawing.Point(500, 193);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(58, 17);
-            this.listBox6.TabIndex = 23;
-            this.listBox6.Visible = false;
-            this.listBox6.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_6.Location = new System.Drawing.Point(500, 193);
+            this.listBox_6.Name = "listBox_6";
+            this.listBox_6.Size = new System.Drawing.Size(58, 17);
+            this.listBox_6.TabIndex = 23;
+            this.listBox_6.Visible = false;
+            this.listBox_6.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox_1
             // 
@@ -436,10 +438,11 @@
             this.listBox_2.Visible = false;
             this.listBox_2.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox9
+            // listBox_3
             // 
-            this.listBox9.FormattingEnabled = true;
-            this.listBox9.Items.AddRange(new object[] {
+            this.listBox_3.FormattingEnabled = true;
+            this.listBox_3.Items.AddRange(new object[] {
+            "w",
             "x",
             "y",
             "z",
@@ -448,12 +451,12 @@
             "X",
             "Y",
             "Z"});
-            this.listBox9.Location = new System.Drawing.Point(500, 216);
-            this.listBox9.Name = "listBox9";
-            this.listBox9.Size = new System.Drawing.Size(58, 17);
-            this.listBox9.TabIndex = 23;
-            this.listBox9.Visible = false;
-            this.listBox9.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox_3.Location = new System.Drawing.Point(500, 216);
+            this.listBox_3.Name = "listBox_3";
+            this.listBox_3.Size = new System.Drawing.Size(58, 17);
+            this.listBox_3.TabIndex = 23;
+            this.listBox_3.Visible = false;
+            this.listBox_3.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox10
             // 
@@ -501,14 +504,14 @@
             this.ClientSize = new System.Drawing.Size(615, 503);
             this.Controls.Add(this.listBox_global);
             this.Controls.Add(this.listBox12);
-            this.Controls.Add(this.listBox9);
-            this.Controls.Add(this.listBox6);
+            this.Controls.Add(this.listBox_3);
+            this.Controls.Add(this.listBox_6);
             this.Controls.Add(this.listBox3);
             this.Controls.Add(this.listBox10);
             this.Controls.Add(this.listBox_2);
             this.Controls.Add(this.listBox_1);
-            this.Controls.Add(this.listBox5);
-            this.Controls.Add(this.listBox4);
+            this.Controls.Add(this.listBox_5);
+            this.Controls.Add(this.listBox_4);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox_7);
             this.Controls.Add(this.textBox2);
@@ -568,12 +571,12 @@
         private System.Windows.Forms.ListBox listBox_7;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
-        private System.Windows.Forms.ListBox listBox5;
-        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListBox listBox_4;
+        private System.Windows.Forms.ListBox listBox_5;
+        private System.Windows.Forms.ListBox listBox_6;
         private System.Windows.Forms.ListBox listBox_1;
         private System.Windows.Forms.ListBox listBox_2;
-        private System.Windows.Forms.ListBox listBox9;
+        private System.Windows.Forms.ListBox listBox_3;
         private System.Windows.Forms.ListBox listBox10;
         private System.Windows.Forms.ListBox listBox12;
         private System.Windows.Forms.ListBox listBox_global;

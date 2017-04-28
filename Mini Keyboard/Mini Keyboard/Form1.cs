@@ -117,5 +117,33 @@ namespace Mini_Keyboard
         {
 
         }
+
+        private void button_3_Click(object sender, EventArgs e)
+        {
+            {
+                timer.Stop();
+                if (firstclick == true)
+                {
+                    listBox_global.Items.Clear();
+                    for (int i = 0; i < listBox_3.Items.Count; i++)
+                    {
+                        listBox_global.Items.Add(listBox_3.Items[i].ToString());
+
+                    }
+                    firstclick = false;
+
+                }
+
+                Numberofclicks++;
+
+                timer.Enabled = true;
+
+            }
+        }
+
+        private void button_4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
