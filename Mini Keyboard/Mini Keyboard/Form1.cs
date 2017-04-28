@@ -14,7 +14,7 @@ namespace Mini_Keyboard
 {
     public partial class Form1 : Form
     {
-
+        
         bool firstclick = true;
         int Numberofclicks = -1;
 
@@ -24,6 +24,7 @@ namespace Mini_Keyboard
         public Form1()
         {
             InitializeComponent();
+            timer.Stop();
         }
 
         private void button17_Click(object sender, EventArgs e)
@@ -32,7 +33,9 @@ namespace Mini_Keyboard
         }
 
         private void Mode_button_Click(object sender, EventArgs e)
-        {
+        { //if the text in the status button = multi-press then 
+          //when the button is clicked the text will change to predictive.
+            //if not then the text will change to multi-press
             if (button_status.Text == "Multi-press")
             {
                 button_status.Text = "Predictive";
@@ -45,18 +48,19 @@ namespace Mini_Keyboard
 
         private void button_1_Click(object sender, EventArgs e)
         {
+            timer.Stop();
          if (firstclick == true)
          {
              listBox_global.Items.Clear();
              for (int i = 0; i < listBox_1.Items.Count; i++ )
              {
                   listBox_global.Items.Add (listBox_1.Items [i].ToString());
-                  timer.Enabled = true;
+                 
              }
              firstclick = false;
                  
          }
-         timer.Enabled = false;
+         
          Numberofclicks++;
             
          timer.Enabled = true;
@@ -82,9 +86,9 @@ namespace Mini_Keyboard
         private void timer1_Tick(object sender, EventArgs e)
         {
             Letter_builder.AppendText(listBox_global.Items[Numberofclicks].ToString());
-            timer.Enabled = true;
+            timer.Stop();
             firstclick = true;
-            Numberofclicks = 8;
+            Numberofclicks = -1;
 
         }
 

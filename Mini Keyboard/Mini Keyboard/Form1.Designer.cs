@@ -312,7 +312,13 @@
             // 
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Items.AddRange(new object[] {
-            "a b c 8 A B C"});
+            "a",
+            "b",
+            "c",
+            "8",
+            "A",
+            "B",
+            "C"});
             this.listBox2.Location = new System.Drawing.Point(436, 170);
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(58, 17);
@@ -324,7 +330,13 @@
             // 
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Items.AddRange(new object[] {
-            "d e f 9 D E F"});
+            "d",
+            "e",
+            "f",
+            "9",
+            "D",
+            "E",
+            "F"});
             this.listBox3.Location = new System.Drawing.Point(500, 170);
             this.listBox3.Name = "listBox3";
             this.listBox3.Size = new System.Drawing.Size(58, 17);
@@ -336,7 +348,13 @@
             // 
             this.listBox4.FormattingEnabled = true;
             this.listBox4.Items.AddRange(new object[] {
-            "g h i 4 G H I"});
+            "g",
+            "h",
+            "i",
+            "4",
+            "G",
+            "H",
+            "I"});
             this.listBox4.Location = new System.Drawing.Point(372, 193);
             this.listBox4.Name = "listBox4";
             this.listBox4.Size = new System.Drawing.Size(58, 17);
@@ -348,7 +366,13 @@
             // 
             this.listBox5.FormattingEnabled = true;
             this.listBox5.Items.AddRange(new object[] {
-            "j k l 5 J K L"});
+            "j",
+            "k",
+            "l",
+            "5",
+            "J",
+            "K",
+            "L"});
             this.listBox5.Location = new System.Drawing.Point(436, 193);
             this.listBox5.Name = "listBox5";
             this.listBox5.Size = new System.Drawing.Size(58, 17);
@@ -360,7 +384,13 @@
             // 
             this.listBox6.FormattingEnabled = true;
             this.listBox6.Items.AddRange(new object[] {
-            "m n o 6 M N O"});
+            "m",
+            "n",
+            "o",
+            "6",
+            "M",
+            "N",
+            "O"});
             this.listBox6.Location = new System.Drawing.Point(500, 193);
             this.listBox6.Name = "listBox6";
             this.listBox6.Size = new System.Drawing.Size(58, 17);
@@ -392,7 +422,13 @@
             // 
             this.listBox8.FormattingEnabled = true;
             this.listBox8.Items.AddRange(new object[] {
-            "t u v 2 T U V"});
+            "t",
+            "u",
+            "v",
+            "2",
+            "T",
+            "U",
+            "V"});
             this.listBox8.Location = new System.Drawing.Point(436, 216);
             this.listBox8.Name = "listBox8";
             this.listBox8.Size = new System.Drawing.Size(58, 17);
@@ -404,7 +440,14 @@
             // 
             this.listBox9.FormattingEnabled = true;
             this.listBox9.Items.AddRange(new object[] {
-            "x y z 3 W X Y Z"});
+            "x",
+            "y",
+            "z",
+            "3",
+            "W",
+            "X",
+            "Y",
+            "Z"});
             this.listBox9.Location = new System.Drawing.Point(500, 216);
             this.listBox9.Name = "listBox9";
             this.listBox9.Size = new System.Drawing.Size(58, 17);
