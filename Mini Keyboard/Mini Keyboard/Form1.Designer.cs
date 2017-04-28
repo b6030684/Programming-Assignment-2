@@ -230,6 +230,7 @@
             this.button_9.TabIndex = 4;
             this.button_9.Text = "   9      DEF";
             this.button_9.UseVisualStyleBackColor = false;
+            this.button_9.Click += new System.EventHandler(this.button_9_Click);
             // 
             // Next_button
             // 
