@@ -50,7 +50,7 @@
             this.button_7 = new System.Windows.Forms.Button();
             this.button_status = new System.Windows.Forms.TextBox();
             this.Letter_builder = new System.Windows.Forms.RichTextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Notepad = new System.Windows.Forms.TextBox();
             this.listBox_7 = new System.Windows.Forms.ListBox();
             this.listBox_8 = new System.Windows.Forms.ListBox();
             this.listBox_9 = new System.Windows.Forms.ListBox();
@@ -87,6 +87,7 @@
             this.button_hashtag.TabIndex = 17;
             this.button_hashtag.Text = "     #       0 00";
             this.button_hashtag.UseVisualStyleBackColor = false;
+            this.button_hashtag.Click += new System.EventHandler(this.button_hashtag_Click);
             // 
             // button_0
             // 
@@ -97,6 +98,7 @@
             this.button_0.TabIndex = 16;
             this.button_0.Text = "   000     [ _ ]";
             this.button_0.UseVisualStyleBackColor = false;
+            this.button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // button_star
             // 
@@ -294,14 +296,16 @@
             this.Letter_builder.Size = new System.Drawing.Size(177, 20);
             this.Letter_builder.TabIndex = 21;
             this.Letter_builder.Text = "";
+            this.Letter_builder.TextChanged += new System.EventHandler(this.Letter_builder_TextChanged);
             // 
-            // textBox2
+            // Notepad
             // 
-            this.textBox2.Location = new System.Drawing.Point(29, 12);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(461, 118);
-            this.textBox2.TabIndex = 22;
+            this.Notepad.Location = new System.Drawing.Point(29, 12);
+            this.Notepad.Multiline = true;
+            this.Notepad.Name = "Notepad";
+            this.Notepad.Size = new System.Drawing.Size(461, 118);
+            this.Notepad.TabIndex = 22;
+            this.Notepad.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // listBox_7
             // 
@@ -415,7 +419,7 @@
             // 
             this.listBox_1.FormattingEnabled = true;
             this.listBox_1.Items.AddRange(new object[] {
-            "p ",
+            "p",
             "q",
             "r",
             "s",
@@ -529,7 +533,7 @@
             this.Controls.Add(this.listBox_4);
             this.Controls.Add(this.listBox_8);
             this.Controls.Add(this.listBox_7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Notepad);
             this.Controls.Add(this.Letter_builder);
             this.Controls.Add(this.button_status);
             this.Controls.Add(this.Enter_key);
@@ -582,7 +586,7 @@
         private System.Windows.Forms.Button button_7;
         private System.Windows.Forms.TextBox button_status;
         private System.Windows.Forms.RichTextBox Letter_builder;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Notepad;
         private System.Windows.Forms.ListBox listBox_7;
         private System.Windows.Forms.ListBox listBox_8;
         private System.Windows.Forms.ListBox listBox_9;

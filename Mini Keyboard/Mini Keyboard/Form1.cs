@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MyDialogs; 
+using MyDialogs;
 
 
 namespace Mini_Keyboard
 {
     public partial class Form1 : Form
     {
-        
+
         bool firstclick = true;
         int Numberofclicks = -1;
 
@@ -34,7 +34,7 @@ namespace Mini_Keyboard
 
         private void Mode_button_Click(object sender, EventArgs e)
         { //if the text in the status button = multi-press then 
-          //when the button is clicked the text will change to predictive.
+            //when the button is clicked the text will change to predictive.
             //if not then the text will change to multi-press
             if (button_status.Text == "Multi-press")
             {
@@ -49,22 +49,22 @@ namespace Mini_Keyboard
         private void button_1_Click(object sender, EventArgs e)
         {
             timer.Stop();
-         if (firstclick == true)
-         {
-             listBox_global.Items.Clear();
-             for (int i = 0; i < listBox_1.Items.Count; i++ )
-             {
-                  listBox_global.Items.Add (listBox_1.Items [i].ToString());
-                 
-             }
-             firstclick = false;
-                 
-         }
-         
-         Numberofclicks++;
-            
-         timer.Enabled = true;
-           
+            if (firstclick == true)
+            {
+                listBox_global.Items.Clear();
+                for (int i = 0; i < listBox_1.Items.Count; i++)
+                {
+                    listBox_global.Items.Add(listBox_1.Items[i].ToString());
+
+                }
+                firstclick = false;
+
+            }
+
+            Numberofclicks++;
+
+            timer.Enabled = true;
+
         }
 
         private void button_2_Click(object sender, EventArgs e)
@@ -87,7 +87,7 @@ namespace Mini_Keyboard
             timer.Enabled = true;
 
         }
-            
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -275,7 +275,7 @@ namespace Mini_Keyboard
         }
 
         private void button_star_Click(object sender, EventArgs e)
-         {
+        {
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -296,4 +296,43 @@ namespace Mini_Keyboard
 
             }
         }
+
+        private void button_hashtag_Click(object sender, EventArgs e)
+        {
+            {
+                timer.Stop();
+                if (firstclick == true)
+                {
+                    listBox_global.Items.Clear();
+                    for (int i = 0; i < listBox_10.Items.Count; i++)
+                    {
+                        listBox_global.Items.Add(listBox_10.Items[i].ToString());
+
+                    }
+                    firstclick = false;
+
+                }
+
+                Numberofclicks++;
+
+                timer.Enabled = true;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Letter_builder_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button_0_Click(object sender, EventArgs e)
+        {
+            Notepad.AppendText( Letter_builder.Text + " ");
+            Letter_builder.Text = "";
+        }
+    }
 }
