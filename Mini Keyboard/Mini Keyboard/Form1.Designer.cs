@@ -304,7 +304,13 @@
             // 
             this.listBox_7.FormattingEnabled = true;
             this.listBox_7.Items.AddRange(new object[] {
-            ". ~ \" 7 \' : ;"});
+            ".",
+            "~",
+            "\"",
+            "7",
+            "\'",
+            ":",
+            ";"});
             this.listBox_7.Location = new System.Drawing.Point(372, 170);
             this.listBox_7.Name = "listBox_7";
             this.listBox_7.Size = new System.Drawing.Size(58, 17);
