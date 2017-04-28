@@ -47,7 +47,8 @@ namespace Mini_Keyboard
         }
 
         private void button_1_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             timer.Stop();
             if (firstclick == true)
             {
@@ -68,7 +69,8 @@ namespace Mini_Keyboard
         }
 
         private void button_2_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             timer.Stop();
             if (firstclick == true)
             {
@@ -94,7 +96,8 @@ namespace Mini_Keyboard
         }
 
         private void button_7_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -118,7 +121,7 @@ namespace Mini_Keyboard
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
+        {//starts and stops the time according to the number of times the button has been pressed
             Letter_builder.AppendText(listBox_global.Items[Numberofclicks].ToString());
             timer.Stop();
             firstclick = true;
@@ -132,12 +135,13 @@ namespace Mini_Keyboard
         }
 
         private void Enter_key_Click(object sender, EventArgs e)
-        {
+        {//pressing the enter key creates a new line in the notepad textbox
             Notepad.AppendText(Environment.NewLine);
         }
 
         private void button_3_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -160,7 +164,8 @@ namespace Mini_Keyboard
         }
 
         private void button_4_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -183,7 +188,8 @@ namespace Mini_Keyboard
         }
 
         private void button_5_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -206,7 +212,8 @@ namespace Mini_Keyboard
         }
 
         private void button_6_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -229,7 +236,8 @@ namespace Mini_Keyboard
         }
 
         private void button_8_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -252,7 +260,8 @@ namespace Mini_Keyboard
         }
 
         private void button_9_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -275,7 +284,8 @@ namespace Mini_Keyboard
         }
 
         private void button_star_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -298,7 +308,8 @@ namespace Mini_Keyboard
         }
 
         private void button_hashtag_Click(object sender, EventArgs e)
-        {
+        {//goes through the items in the listbx corresponding to the amount of times
+            //you click the button and displays in the letter builder textbox.
             {
                 timer.Stop();
                 if (firstclick == true)
@@ -310,7 +321,6 @@ namespace Mini_Keyboard
 
                     }
                     firstclick = false;
-
                 }
 
                 Numberofclicks++;
@@ -330,7 +340,8 @@ namespace Mini_Keyboard
         }
 
         private void button_0_Click(object sender, EventArgs e)
-        {
+        {//puts the text from letter builder to the notepad
+        //and clears the letter builder text box.
             Notepad.AppendText( Letter_builder.Text + " ");
             Letter_builder.Text = "";
         }
@@ -346,7 +357,7 @@ namespace Mini_Keyboard
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {//this allows you to open a new file
             openFileDialog1.InitialDirectory = "C\\:";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -356,9 +367,14 @@ namespace Mini_Keyboard
         }
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        {//Clears all text from the notepad
             Notepad.Text = string.Empty;
 
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {//Closes Application
+            Close();
         }
     }
 }
